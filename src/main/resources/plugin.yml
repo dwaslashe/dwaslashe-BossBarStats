@@ -1,0 +1,12 @@
+main: xyz.dwaslashe.bossbarstats.Main
+name: dwaslashe-BossBarStats
+description: Server stats in BossBar!
+author: dwaslashe
+version: 1.0
+website: dwaslashe.xyz
+api-version: 1.17
+
+commands:
+  bossbarstats:
+    aliases: [bbs]
+    permission: bossbarstats.command
