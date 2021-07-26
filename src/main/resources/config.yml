@@ -1,0 +1,4 @@
+# Fajnie cię tu widzieć ;p
+bossbarstats:
+  enable: ' &8>> &cPomyślnie &c&nwyłączyłeś&c statystyki'
+  disable: ' &8>> &aPomyślnie &a&nwłączyłeś&a statystyki'

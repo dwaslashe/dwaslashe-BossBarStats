@@ -16,6 +16,11 @@ public class Main extends JavaPlugin {
         loadCommands();
         loadListeners();
         loadTasks();
+
+        getConfig().addDefault("bossbarstats.enable", " &8>> &cPomyślnie &c&nwyłączyłeś&c statystyki");
+        getConfig().addDefault("bossbarstats.disable", " &8>> &aPomyślnie &a&nwłączyłeś&a statystyki");
+        getConfig().options().copyDefaults(true);
+        saveConfig();
     }
 
     @Override

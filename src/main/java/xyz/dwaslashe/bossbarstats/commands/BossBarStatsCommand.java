@@ -5,6 +5,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
+import xyz.dwaslashe.bossbarstats.Main;
 import xyz.dwaslashe.bossbarstats.tasks.BossBarStatsTask;
 import xyz.dwaslashe.bossbarstats.utils.Api;
 
@@ -20,10 +21,10 @@ public class BossBarStatsCommand implements CommandExecutor {
         } else if (args.length >= 0) {
             if (BossBarStatsTask.bar.getPlayers().contains(player) == true) {
                 BossBarStatsTask.bar.removePlayer(player);
-                player.sendMessage(Api.fixColor(" &8>> &cPomyślnie &c&nwyłączyłeś&c statystyki"));
+                player.sendMessage(Api.fixColor(Main.getPlugin(Main.class).getConfig().getString("bossbarstats.enable")));
             } else if (BossBarStatsTask.bar.getPlayers().contains(player) == false) {
                 BossBarStatsTask.bar.addPlayer(player);
-                player.sendMessage(Api.fixColor(" &8>> &aPomyślnie &a&nwłączyłeś&a statystyki"));
+                player.sendMessage(Api.fixColor(Main.getPlugin(Main.class).getConfig().getString("bossbarstats.disable")));
             }
         }
         return false;
