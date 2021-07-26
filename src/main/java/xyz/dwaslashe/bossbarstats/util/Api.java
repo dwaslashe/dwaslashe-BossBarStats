@@ -1,4 +1,4 @@
-package xyz.dwaslashe.bossbarstats.utils;
+package xyz.dwaslashe.bossbarstats.util;
 
 import net.minecraft.server.dedicated.DedicatedServer;
 import org.bukkit.ChatColor;

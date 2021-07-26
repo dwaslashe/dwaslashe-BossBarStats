@@ -1,4 +1,4 @@
-package xyz.dwaslashe.bossbarstats.commands;
+package xyz.dwaslashe.bossbarstats.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -6,8 +6,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import xyz.dwaslashe.bossbarstats.Main;
-import xyz.dwaslashe.bossbarstats.tasks.BossBarStatsTask;
-import xyz.dwaslashe.bossbarstats.utils.Api;
+import xyz.dwaslashe.bossbarstats.task.BossBarStatsTask;
+import xyz.dwaslashe.bossbarstats.util.Api;
 
 public class BossBarStatsCommand implements CommandExecutor {
     public BossBarStatsCommand() {

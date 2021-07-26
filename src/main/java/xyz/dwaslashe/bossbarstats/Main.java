@@ -2,9 +2,9 @@ package xyz.dwaslashe.bossbarstats;
 
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import xyz.dwaslashe.bossbarstats.commands.BossBarStatsCommand;
-import xyz.dwaslashe.bossbarstats.listeners.PlayerQuitListener;
-import xyz.dwaslashe.bossbarstats.tasks.BossBarStatsTask;
+import xyz.dwaslashe.bossbarstats.command.BossBarStatsCommand;
+import xyz.dwaslashe.bossbarstats.listener.PlayerQuitListener;
+import xyz.dwaslashe.bossbarstats.task.BossBarStatsTask;
 
 public class Main extends JavaPlugin {
     public Main() {

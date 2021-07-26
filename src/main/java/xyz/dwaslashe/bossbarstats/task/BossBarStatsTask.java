@@ -1,11 +1,11 @@
-package xyz.dwaslashe.bossbarstats.tasks;
+package xyz.dwaslashe.bossbarstats.task;
 
 import org.bukkit.Bukkit;
 import org.bukkit.boss.BarColor;
 import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
 import org.bukkit.scheduler.BukkitRunnable;
-import xyz.dwaslashe.bossbarstats.utils.Api;
+import xyz.dwaslashe.bossbarstats.util.Api;
 
 public class BossBarStatsTask extends BukkitRunnable {
     public static BossBar bar = Bukkit.createBossBar(Api.fixColor("&7TPS&8: &a" + Api.getTps()), BarColor.GREEN, BarStyle.SEGMENTED_6);
