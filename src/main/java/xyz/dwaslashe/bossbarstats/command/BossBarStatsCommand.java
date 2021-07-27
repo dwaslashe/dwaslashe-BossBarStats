@@ -10,11 +10,8 @@ import xyz.dwaslashe.bossbarstats.task.BossBarStatsTask;
 import xyz.dwaslashe.bossbarstats.util.Api;
 
 public class BossBarStatsCommand implements CommandExecutor {
-    public BossBarStatsCommand() {
-    }
-
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
-        Player player = (Player) sender;
+        final Player player = (Player) sender;
         if (sender instanceof ConsoleCommandSender) {
             sender.sendMessage("Komenda nie jest dla konsoli! (TPS: " + Api.getTps() + ")");
             return false;

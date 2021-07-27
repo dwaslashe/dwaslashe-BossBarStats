@@ -9,8 +9,8 @@ public class Api {
         return message == null ? "" : ChatColor.translateAlternateColorCodes('&', message)
                 .replace(">>", "»")
                 .replace("<<", "«");
-
     }
+
     public static double getTps(){
         final double[] tpsA = DedicatedServer.getServer().recentTps;
         return Math.min(Math.round(tpsA[0] * 100.0) / 100.0, 20);
