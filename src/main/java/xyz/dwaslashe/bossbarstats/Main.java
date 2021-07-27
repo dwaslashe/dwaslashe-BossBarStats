@@ -7,8 +7,6 @@ import xyz.dwaslashe.bossbarstats.listener.PlayerQuitListener;
 import xyz.dwaslashe.bossbarstats.task.BossBarStatsTask;
 
 public class Main extends JavaPlugin {
-    public Main() {
-    }
 
     @Override
     public void onEnable() {
@@ -29,16 +27,16 @@ public class Main extends JavaPlugin {
         BossBarStatsTask.bar.getPlayers().forEach(player -> BossBarStatsTask.bar.removePlayer(player));
     }
 
-    public void loadCommands() {
+    private void loadCommands() {
         this.getCommand("bossbarstats").setExecutor(new BossBarStatsCommand());
     }
 
-    public void loadListeners() {
-        PluginManager pluginManager = this.getServer().getPluginManager();
+    private void loadListeners() {
+        final PluginManager pluginManager = this.getServer().getPluginManager();
         pluginManager.registerEvents(new PlayerQuitListener(), this);
     }
 
-    public void loadTasks() {
+    private void loadTasks() {
         new BossBarStatsTask().runTaskTimer(this, 0, 40);
     }
 }
